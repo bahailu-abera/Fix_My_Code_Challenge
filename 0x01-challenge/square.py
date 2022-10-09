@@ -7,15 +7,10 @@ A Module for modeling Square obj
 class square():
     """ A class Square
     """
-    width = 0
-    height = 0
 
-    def __init__(self, *args, **kwargs):
-        if (args and len(args)):
-            setattr(self, "width", args[0])
-            setattr(self, "height", args[1])
-        for key, value in kwargs.items():
-            setattr(self, key, value)
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
 
     def area_of_my_square(self):
         """ Area of the square """
