@@ -1,6 +1,12 @@
 #!/usr/bin/python3
+"""
+A Module for modeling Square obj
+"""
+
 
 class square():
+    """ A class Square
+    """
     width = 0
     height = 0
 
@@ -16,9 +22,11 @@ class square():
         return self.width * self.height
 
     def PermiterOfMySquare(self):
+        """ Perimeter of the square """
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
+        """ String format of square """
         return "{}/{}".format(self.width, self.height)
 
 
